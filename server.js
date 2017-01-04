@@ -3,7 +3,7 @@ var app = express();
 var mongodb = require('mongodb');
 
 var MongoClient = mongodb.MongoClient;
-var url = "mongodb://localhost:27017/links";
+var url = "mongodb://links:links@ds155028.mlab.com:55028/links";
 
 app.get("/new/*", function(request, response) {
     var longURL = request.params[0];
